@@ -1,0 +1,15 @@
+: Ejercicio #4
+
+def fibonacci_suc(n):
+    fib_s = [0, 1]
+    for i in range(2, n):
+        siguiente= fib_s[i - 1] + fib_s[i - 2]
+        fib_s.append(siguiente)
+    if n == 1:
+        return [0]
+    return fib_sequence[:n]
+
+print(" Este programa calcula la sucesion Fibonacci de un #(n) dado") 
+n = int(input("Introduce el valor de n: "))
+lista = fibonacci_suc(n)
+print(f"La sucesión de Fibonacci para n={n} es: {lista}")
